@@ -5,8 +5,8 @@ server:
   port: 8761
 eureka:
   client:
-    register-with-eureka: false #false:²»×÷ÎªÒ»¸ö¿Í»§¶Ë×¢²áµ½×¢²áÖĞĞÄ
-    fetch-registry: false #ÎªtrueÊ±£¬¿ÉÒÔÆô¶¯£¬µ«±¨Òì³££ºCannot execute request on any known server
+    register-with-eureka: false #false:ä¸ä½œä¸ºä¸€ä¸ªå®¢æˆ·ç«¯æ³¨å†Œåˆ°æ³¨å†Œä¸­å¿ƒ
+    fetch-registry: false #ä¸ºtrueæ—¶ï¼Œå¯ä»¥å¯åŠ¨ï¼Œä½†æŠ¥å¼‚å¸¸ï¼šCannot execute request on any known server
 
 
 
