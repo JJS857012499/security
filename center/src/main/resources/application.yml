@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: center
 ---
 spring:
   profiles: peer1                                 # 指定profile=peer1
@@ -6,9 +9,10 @@ server:
 eureka:
   instance:
     hostname: peer1                               # 指定当profile=peer1时，主机名
+    instance-id: ${spring.application.name}:${server.port}
   client:
-    fetch-registry: false
-    register-with-eureka: false
+#    fetch-registry: false
+#    register-with-eureka: false
     serviceUrl:
       defaultZone: http://peer2:8762/eureka/ # 将自己注册到peer2这个Eureka上面去
 
@@ -20,8 +24,9 @@ server:
 eureka:
   instance:
     hostname: peer2
+    instance-id: ${spring.application.name}:${server.port}
   client:
-    fetch-registry: false
-    register-with-eureka: false
+#    fetch-registry: false
+#    register-with-eureka: false
     serviceUrl:
       defaultZone: http://peer1:8761/eureka/
