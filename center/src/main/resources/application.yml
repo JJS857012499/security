@@ -10,6 +10,7 @@ eureka:
   instance:
     hostname: peer1                               # 指定当profile=peer1时，主机名
     instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true # 神坑，由于是部署在同一台服务，注册中心总是莫名被踢出
   client:
 #    fetch-registry: false
 #    register-with-eureka: false
@@ -25,6 +26,7 @@ eureka:
   instance:
     hostname: peer2
     instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
   client:
 #    fetch-registry: false
 #    register-with-eureka: false
