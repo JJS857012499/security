@@ -1,6 +1,10 @@
 spring:
   application:
     name: center
+  cloud:
+    inetutils:
+      ignored-interfaces[0]: eth0
+      ignored-interfaces[1]: eth1
 ---
 spring:
   profiles: peer1                                 # 指定profile=peer1
