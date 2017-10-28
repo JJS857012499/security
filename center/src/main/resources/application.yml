@@ -13,8 +13,8 @@ eureka:
     prefer-ip-address: true # 神坑，由于是部署在同一台服务，注册中心总是莫名被踢出
     ip-address: 127.0.0.1
   client:
-#    fetch-registry: false
-#    register-with-eureka: false
+    fetch-registry: false
+    register-with-eureka: false
     serviceUrl:
       defaultZone: http://peer2:8762/eureka/ # 将自己注册到peer2这个Eureka上面去
 
@@ -30,7 +30,7 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
   client:
-#    fetch-registry: false
-#    register-with-eureka: false
+    fetch-registry: false
+    register-with-eureka: false
     serviceUrl:
       defaultZone: http://peer1:8761/eureka/
