@@ -15,11 +15,28 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
     <packaging>pom</packaging>
     <modules>
         <module>center</module>
         <module>config</module>
+        <module>gate</module>
+        <module>admin</module>
     </modules>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.14</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
     <!--依赖管理，用于管理spring-cloud的依赖，其中Dalston.SR1是版本号-->
     <dependencyManagement>
         <dependencies>
