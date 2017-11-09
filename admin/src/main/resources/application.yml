@@ -14,7 +14,7 @@ spring:
         url: jdbc:mysql://120.25.201.80:3306/ag_admin?useUnicode=true&characterEncoding=UTF8
         username: root
         password: 123456
-        # Ê¹ÓÃdruidÊı¾İÔ´
+        # ä½¿ç”¨druidæ•°æ®æº
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
         filters: stat
@@ -47,7 +47,7 @@ swagger:
     basepackage: com.zd.admin
     service:
         name: admin
-        description: admin ºó¶Ë·şÎñ
+        description: admin åç«¯æœåŠ¡
         developer:
 
 
