@@ -46,7 +46,8 @@
 
 	<build>
 		<filters>
-			<filter>../env/dev.properties</filter>
+			<filter>../env/self.properties</filter>
+			<!--<filter>../env/dev.properties</filter>-->
 		</filters>
 		<resources>
 			<resource>
