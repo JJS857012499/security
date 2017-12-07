@@ -16,17 +16,15 @@
     </parent>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+
     </properties>
 
     <packaging>pom</packaging>
     <modules>
-        <module>center</module>
-        <module>config</module>
-        <module>gate</module>
-        <module>admin</module>
+        <module>security-center</module>
+        <module>security-config</module>
+        <module>security-gate</module>
+        <module>security-admin</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->

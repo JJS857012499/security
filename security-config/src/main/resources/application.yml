@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: @security.cloud.config.git.url@
+server:
+  port: @security.cloud.config.port@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: @eureka.client.service.urls@
+
+
+
