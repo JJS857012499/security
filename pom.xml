@@ -25,6 +25,7 @@
         <module>security-config</module>
         <module>security-gate</module>
         <module>security-admin</module>
+        <module>security-auth</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
